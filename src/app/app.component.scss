@@ -1,0 +1,52 @@
+.actionBtn {
+  margin-top: 5px;
+  margin-bottom: 2px;
+  font-size: 1.2em;
+}
+
+.snapshot {
+  text-align: center;
+  img {
+    max-width: 800px;
+    max-height: 800px;
+  }
+}
+
+ul.links {
+  padding-bottom: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "Cam Cam Cam Controls" "Cam Cam Cam Device";
+}
+
+.background {
+  background-color:rgba(19, 19, 19);
+  position: fixed;
+  top: 0;
+  left: 0;
+  
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;  
+}
+.block-bg {  
+  padding: 1em;
+  margin: 1em;
+  background-color: rgba(90, 89, 89, 0.377);
+
+}
+
+.text {
+  color: #F6F6F7;
+}
+
+.Cam { grid-area: Cam; }
+
+.Controls { grid-area: Controls; }
+
+.Device { grid-area: Device; }
